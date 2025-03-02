@@ -1,0 +1,97 @@
+\documentclass[11pt]{scrartcl}
+\usepackage[sexy]{evan}
+\usepackage{booktabs}
+\usepackage{bbding}
+\usepackage{dblfloatfix} 
+%\providecommand{\isRp}{{\color{green!60!black}\CheckmarkBold\CheckmarkBold}}
+\providecommand{\isRq}{{\color{green!60!black}\CheckmarkBold}}
+\providecommand{\isUs}{{\color{cyan}\sffamily\bfseries O}}
+\providecommand{\isAv}{{\color{gray}\sffamily\bfseries !!}}
+\providecommand{\isEx}{{\color{red}\sffamily\bfseries X}}
+\ohead{\bfseries\footnotesize Cambridge Integration Bee Syllabus}
+
+\begin{document}
+\title{Cambridge Integration Bee Syllabus}
+\author{Vishal Gupta}
+\maketitle
+
+Please note that this syllabus is more of a guideline of content that will allow you to be able to solve each problem rather than a strict requirement for every problem -- a lot of the time advanced techniques/special functions can be avoided with clever substitutions and tricks!
+
+\section{Integration Techniques}
+
+You should be familiar with the integration techniques listed below. The items at the end will not be required.
+
+\begin{center}
+	\begin{tabular}{cp{12cm}}
+	\toprule Status & Topic \\ \midrule
+	\isRq & Everything which is on the A-Level and STEP Mathematics and Further Mathematics syllabus for Integration, including integration by substitution and integration by parts. \\
+	\isRq & Differentiation under the integral sign (DUTIS): 
+	
+	$$\frac{d}{d t}\left(\int_{a}^{b} f(x, t) \mathrm{d} x\right)=\int_{a}^{b} \frac{\partial}{\partial t}(f(x, t)) \mathrm{d} x.$$ \\
+	\isRq & The Weierstrass substitution, $t=\tan \left(\frac{x}{2}\right)$ (also known as $t$ substitution). \\
+	\isRq & Infinite series and their use in evaluating integrals, swapping an integral and an infinite sum - issues of convergence won't be considered. \\
+	\isRq & The reflection property of integrals:
+
+	$$
+	\int_{a}^{b} f(x) \mathrm{d} x=\int_{a}^{b} f(a+b-x) \mathrm{d} x.
+	$$ \\
+	\isRq & Odd and even functions and their use in evaluating integrals.\\
+	% \isUs & Use of trigonometry, e.g.\ law of sines and cosines \\
+	% \isUs & Coordinate systems such as Cartesian coordinates,
+	% 	complex numbers, or barycentric coordinates \\
+	% \isUs & Inversive geometry \\
+	% \isUs & Projective geometry, e.g.\ cross ratios, harmonic bundles, poles and polars,
+	% 	Pascal's theorem, and so on \\
+	% \isUs & Spiral similarity \\
+	% \isAv & Definitions and basic properties of conic sections \\
+	\isEx & Green's Theorem, Stokes' Theorem, the Divergence Theorem and other results from vector calculus. \\
+	\bottomrule
+	\end{tabular}
+\end{center} 
+
+\clearpage
+
+\section{Functions \& Specific results}
+
+
+Some knowledge of the following special functions and more specific results may be required. 
+
+\begin{center}
+	\begin{tabular}{cp{12cm}}
+	\toprule Status & Topic \\ \midrule
+	\isRq & The Gamma function,
+	$$
+	\Gamma(n)=\int_{0}^{\infty} x^{n-1} e^{-x} \mathrm{~d} x.
+	$$\\
+	\isRq & The Beta function
+	$$
+	\mathrm{B}(x, y)=\int_{0}^{1} t^{x-1}(1-t)^{y-1} \mathrm{~d} t=\frac{\Gamma(x) \Gamma(y)}{\Gamma(x+y)}.
+	$$
+	\\
+	\isRq & The Riemann zeta function,
+	$$
+	\zeta(s)=\sum_{n=1}^{\infty} \frac{1}{n^{s}} \quad \text { for } s>1.
+	$$\\
+	\isRq & The floor function $\lfloor x\rfloor$ which rounds down to the integer less than or equal to $x$. \\
+	\isRq & Useful infinite series, such as
+	$$
+	\begin{aligned}
+		\sum_{n = 1}^{\infty} \frac{1}{n^2} &= \frac{\pi^2}{6}, \\
+		\sum_{n = 1}^{\infty} \frac{(-1)^n}{(2n + 1)^2} &= G \quad \text{(Catalan's Constant).}
+	\end{aligned}
+	$$
+	\\
+	\bottomrule
+	\end{tabular}
+\end{center}
+
+
+\begin{figure*}[!b]
+	\centering
+	\section*{\centering Sponsored By}
+	
+
+	\includegraphics[width=0.5\textwidth]{jslogo.png}
+\end{figure*}
+
+\end{document}

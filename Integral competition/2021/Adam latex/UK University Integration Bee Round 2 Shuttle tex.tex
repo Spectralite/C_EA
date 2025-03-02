@@ -1,0 +1,303 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage{graphicx}
+\usepackage{mathpazo}
+\usepackage{changepage}
+
+\usepackage{amsmath}
+\everymath{\displaystyle}
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor} 
+\newcommand{\dd}{\mathrm{d}}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{The UK University Integration Bee 2021/22}
+\lhead{Round Two - Shuttle Round}
+\rfoot{Page \thepage}
+
+\begin{document}
+    
+% Title Page
+
+\thispagestyle{empty}
+
+\begin{center}
+    \Huge\textsc{THE UK UNIVERSITY INTEGRATION BEE}
+
+    \Huge 2021/22
+    $$
+    \int
+    $$
+\end{center}
+
+\vspace{0.8in}
+
+\begin{center}
+    \Huge\sffamily\textbf{ROUND TWO}\\
+    \LARGE\textbf{Saturday, 20 November 2021}
+\end{center}
+
+\vspace{0.7in}
+
+\begin{center}
+    \begin{adjustwidth}{2cm}{2cm}
+
+\includegraphics[height=0.7in]{oxford-logo}
+\hfill
+\includegraphics[height=0.7in]{durham-logo}
+\hfill
+\includegraphics[height=0.7in]{warwick-logo}
+
+
+\vspace{0.2in}
+
+\includegraphics[height=0.5in]{imperial-logo}
+\hfill
+\includegraphics[height=0.5in]{cambridge-logo}
+
+\end{adjustwidth}
+\end{center}
+
+
+\vspace{0.6in}
+
+\begin{center}
+    \Large
+\textbf{Sponsored by}
+
+\vspace{0.15in}
+
+\includegraphics[width=0.5\textwidth]{jane-street-logo}
+\end{center}
+\clearpage
+
+
+% Actual Questions
+
+
+%Good sources: 
+
+% DVKT Math - R1, Group & Shuttle
+% Solving together - ^  
+% Related instagram pages
+% MIT Int bee - Crossword & shuttle
+% Berkeley bee - used this last year - mainly R1
+% Belarusian open math olympiad - R1
+% Books like III and Almost impossible - mainly R1
+% My brain - any
+
+%Rally ones will be quite hard to do but maybe we could do a diverging one
+
+%correct all log to ln at the end and recheck tally
+
+%Lambert W integral? 
+
+%Need some Weierstrass shite maybe with a dutis variant too
+
+%These seem like good Round 1 or Round 2 part 1 things
+
+%Tally of difficulty
+%Easy: III (Q14,23,26)
+% Mid-low: IIIIIIIIII (Q1,4,8,10,20,21,22,25,28,32)
+% Mid: IIIIIIIII (Q3,11,12,18,19,27,30,35,36)
+% Mid high: IIIIIII (Q2,15,16,29,34,39,40)
+% Hard: IIIIII (Q5,6,7,13,17,33,38)
+% Very hard: III (Q9,24,31)
+
+%Q37 maybe i should remove so above doesnt include
+
+%Count of problem type:
+
+%Definite:
+%Series: Q1,Q4, Q7, Q9,17,18,24,27.28,31
+%-Catalan: Q17,24
+%DUTIS: Q5,21,30,33,40
+%Integral swap: Q34
+%Reflection: Q6,11,12,16,17,20,25,26.29,35
+%Contour: Q7,13 (some contour problems can be done in other ways - only one of these I only know a contour solution)
+%Weierstrass: Q3,30,36,37
+%Gamma: Q16,38
+%Beta: Q38,
+%Floor: Q4.9,28
+%Integral of inverse: 32
+%Hard af: Q31 (the tan(x^2) one)
+%Smart trick: Q6, Q8,11,19,22,35,36,39
+%Recurrence: Q3
+
+%Indefinite: Q2, Q10,14,15,22,26
+
+
+%Numbers left to put in: 69 - shuttle
+
+%need more trig subs
+
+% Start out with something friendly and nothing too hard till a couple problems in ! 
+
+%Possible http://www.12000.org/my_notes/ten_hard_integrals/inse1.htm#x4-30002.1
+% \begin{twocolumn}
+\begin{enumerate}
+    %Need 16 questions 
+
+%How long to make this? Test with Archim members, 4-8 minutes?
+%https://www.ukmt.org.uk/sites/default/files/ukmt/ptmr/ptmr-sample-shuttle.pdf
+
+%Possible stuff
+%Good sources: MIT Integral bee for short qns
+%int sin x 0 to pi or something as a start as its easy
+% int e^-ax sinx dx from 0 to inf.
+
+%Some quite simple reflection thing for a first qn
+
+%also want some question where you get a parameter which absolutely kills eg a sin0, cos0 or e^0 ? or even an ln0 to get a -infinity answer hahahahahah. WILL NEED TO ANNOUNCE -INFINITY or INFINITY IS VALID ANSWER
+
+%techniques which are valid:
+
+%Weierstrass for Q3,4
+%Dutis for Q4
+%series for Q2-4
+%Reflection for 1-4
+%Floor function
+%Odd / even / 'adding zero trick'
+
+%3. $\int_a^{-a} e^{\text{some quadratic}} \dd x$
+%Complete square
+%Could do something interesting like maximum value given some constraints and then force the answer to be pi.
+%too easy to be here with infinity as the previous clue
+%Next year maybe
+
+\textbf{\LARGE Shuttle 1} \newline
+
+\begin{flushright}
+\textbf{\LARGE A1}
+\end{flushright}
+
+Evaluate $$\int_0^1 \ln^2(x) \dd x$$
+Pass on the answer squared. \newline  \newline \newline \newline \newline \newline
+%get 2
+%pass on 4
+%Something quite tame. Maybe an even/odd function thing to help simplify it to make it fairly quick.
+%Give the answer squared, it'll be 4
+
+2. $a$\textit{ is the number you will receive} \newline
+Evaluate $$\int_0^{\frac{\pi}{2}} \frac{\sin(x)}{\sin(x+\frac{\pi}{a}
+)} \dd x$$
+Your answer will be of the form $\frac{\pi}{b}$, pass on $b$. \newline  \newline \newline \newline \newline \newline
+%get pi/2sqrt(2)
+%pass on 2sqrt(2)
+%From MIT Integral bee 2019 or 2020 something
+%https://www.wolframalpha.com/input/?i=integral+%28sin%28x%29%29%2F%28sin%28x%2Bpi%2F4%29%29+from+0+to+pi%2F2
+%have the pi/4 be pi/a and pass it on, not possible without a but can do a little intermediate work
+%Answer is of the form pi/csqrt(d), either pass or write c.
+
+3. $a$\textit{ is the number you will receive} \newline Evaluate $$\int_0^{\frac{\pi}{2}} \frac{\dd x}{1+\tan^{a}(x)}$$
+Pass on the 4 times the answer. \newline  \newline \newline \newline \newline \newline
+%get pi/4
+%pass on pi
+%put in middle of shuttle so everyone is like woah we didnt need to pass the number !  Maybe the number passed to them can be 7945
+%Answer pi/4, maybe modify so its integers only, like 1/pi on this ? and a+b
+%integral 3
+
+4. $a$\textit{ is the number you will receive} \newline Evaluate $$\int_0^{a} x\ln(\sin{x}) \dd x$$
+%answer -1/2 pi^2 ln(2)
+%Impossible to do unless it's up to pi so do this as an integral 4. 
+% This is a bit of an easy shuttle but i guess to ease people in ?
+\newpage
+%Something fairly challenging. Can do one of the indefinites like one of the next year fam problems. 
+
+Shuttle 2
+
+1. $a$\textit{ is the number you will receive} \newline Evaluate $$\int_0^{2 \pi} \sin(\sin(x)-x) \dd x$$. Pass on the answer. \newline  \newline \newline \newline \newline \newline   %do this as integral 1
+%Answer 0, pass it on
+%neat reflection
+
+%Something somewhat hard ngl. Maybe a clever sub + reflection? Not obvious the answer is 0, either do a weird integral or mask it by some weird question
+2. $a$\textit{ is the number you will receive} \newline Evaluate $$b=\int_{a=0}^{\infty} \ln(1+\frac{169}{x^2}) \dd x$$. Pass on the second digit of $b$. \newline  \newline \newline \newline \newline \newline 
+%III Page 45,46
+%get 13pi
+%pass on 0
+%Answer is 13pi, maybe say what's the first digit of the answer so that it's 0.
+%or take the irrational part? like a+bsqrt(c) and take rational one.
+
+3. $a$\textit{ is the number you will receive} \newline Evaluate $$b=\int_0^{1} \frac{\ln(a=0(x+1))}{x^2+1} \dd x$$. Pass on your answer. \newline  \newline \newline \newline \newline \newline   %integral 2 or 3 ? 
+%get a=0
+%pass on -infinity (announce that -infinity, infinity are valid)
+%Serret integral but SIKE it's just -infinity lmaooooooooo, take a=0
+
+
+4. $a$\textit{ is the number you will receive} \newline Evaluate $$\int_{\frac{1}{a}}^{\infty} \frac{\ln{x}}{x^2+\pi^2} \dd x$$. 
+%https://www.wolframalpha.com/input/?i=integral+%28ln%28x%29%29%2F%28x%5E2%2Bpi%5E2%29+from+0+to+infinity
+%log(pi)/2
+%Reasonable series one. Just need to figure out how to use -infinity here. 
+
+%DSomething difficult ish, mid low or medium. Maybe a series problem with floor. (to design this pick a series and work backwards). A series I like is Basel, any Zeta thing, Catalan.
+\newpage
+
+Shuttle 3
+
+1. $a$\textit{ is the number you will receive} \newline Evaluate $$b=\int_{-1}^1 \frac{\sin(\cot^{-1}{x})+\cos(\tan^{-1}{x})}{x^2+1} \dd x$$. Pass on $b^2-2$. \newline  \newline \newline \newline \newline \newline
+%This is the same odd even idea but with a little sub thrown in too
+%the sin part should be 0, the remaining part should be like 2cos(pi/4) = sqrt(2)
+%get sqrt(2)
+%pass on 0
+%is this too easy?
+
+2. $a$\textit{ is the number you will receive} \newline Evaluate $$b=\int_0^{a} x^3e^{-x} \dd x$$. Pass on $2-b$. \newline  \newline \newline \newline \newline \newline 
+%get 0
+%pass on 2
+%Do an integral which ends up as 0 because you get the bounds to end up being of 0 length hahahahahahahahahah. Something of moderate difficulty, , , maybe a sin(x^2) so that the mfs cum over fresnel integral? or maybe some aids by parts stuff HAHA (or even troll the gamma mfs)
+%maybe have this and then follow up with the ln(ax) one to be an ultimate troll and then have a fairly difficult integral at the end lmfaoooo, probably some dutis or series type thing.
+
+%Just take the min(floor(this),1). That will look better
+
+3. $a$\textit{ is the number you will receive} \newline Evaluate $$b=\int_0^{\infty} \frac{\ln(x^{\frac{1}{a}})}{x^{\frac{1}{a}}(x+1)^2} \dd x$$. Pass on the least integer greater than $|b|$. \newline  \newline \newline \newline \newline \newline  
+%from:https://www.instagram.com/p/CBVbxIID7zN/
+%solution: https://www.instagram.com/p/CBf1Jg3jfTX/
+%get pi/2 out of it
+%take absolute value
+%pass on 2
+%Possible idea is lnx/1-x^2 from 0 to 1 with 2sqrt(a); take the irrational part
+
+4. $a$\textit{ is the number you will receive} \newline Evaluate $$b=\int_0^{\frac{\pi}{2}} \frac{\cos{\theta}}{a-\sin{2\theta}} \dd x$$.
+%get pi/4
+%https://www.wolframalpha.com/input/?i=integral+%28cos%28x%29%29%2F%282-sin%282x%29%29+from+0+to+pi%2F2
+%Impossible to do unless it's up to pi so do this as an integral 4.  
+\newpage
+%Maybe swap shuttle 2 and 3?
+
+Shuttle 4
+
+1. $a$\textit{ is the number you will receive} \newline Evaluate $$b=\lim_{n \to \infty} \int_{\frac{5}{6}}^{\infty} e^{-x^n} \dd x$$. Your answer should be of the form $\frac{c}{d}$ for $c,d \in \mathbb{Z}$ are coprime, pass on the prime factors of $d$. \newline  \newline \newline \newline \newline \newline 
+%get 1/6
+%pass on 3,2
+
+%Need to decide what number to use for this, maybe to get pi/6 and then say pass the prime factors of denominator
+
+2.$a,b$\textit{ are the numbers you will receive where }$a>b$ \newline Evaluate $$c=\int_0^1 \frac{x^{a=3}-x^{b=2}}{\ln{x}} \dd x$$. Pass on the greatest integer less than $c$. \newline  \newline \newline \newline \newline \newline
+%Given two numbers, a>b
+%Answer is ln(4/3), should pass on 1
+% I want to get two out of this, maybe do like the ceiling of this . . .or twice the ceiling?
+
+3. $a$\textit{ is the number you will receive} \newline Evaluate $$b=\int_0^1 \frac{1-x}{x^a+(x^a+1)^a} \dd x$$. Your answer will be of the form $b=\frac{x}{y}(\ln(w)-z)$ where $x,y,z,w \in \mathbb{Z^+}$ and $x,y$ are coprime. Pass on $\frac{x+\sqrt{x+y}}{z}$. \newline  \newline \newline \newline \newline \newline 
+%b=1
+%https://www.wolframalpha.com/input/?i=integral+%281-x%29%2F%28x%2B%28x%2B1%29%29+from+0+to+1
+% pass on 2
+
+4.$a$\textit{ is the number you will receive} \newline Evaluate $$\int_0^{2\pi} \frac{x}{a - \cos^2{x}} \dd x$$. 
+%Answer 2pi^2. Just quickly go through! 
+%https://www.instagram.com/p/B-j-Ip4jnfg/
+
+%Solution: https://www.instagram.com/p/CBDTZUrDkL1/
+%Possible for rally and then pass onto something that uses phi like these:
+% https://www.instagram.com/p/B-j-Ip4jnfg/ - a bit long
+% https://www.instagram.com/p/B-mbVhUD-Ye/ - not really special use of phi, just a dutis problem
+% https://www.instagram.com/p/B9ugM68JhJ7/ - decent length and not too difficult. 
+% https://www.instagram.com/p/CB-A2ULD-8Z/ - answer is 1, need to work out method. Either this or the one above.
+% Maybe final shuttle as its quite hard and long ?
+    \end{enumerate}
+% \end{twocolumn}
+
+\end{document}

@@ -1,0 +1,192 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage{graphicx}
+\usepackage{mathpazo}
+\usepackage{changepage}
+
+\usepackage{amsmath}
+\everymath{\displaystyle}
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor} 
+\newcommand{\dd}{\mathrm{d}}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{The UK University Integration Bee 2021/22}
+\lhead{Round Two Problems - Group Round}
+\rfoot{Page \thepage}
+
+\begin{document}
+    
+% Title Page
+
+\thispagestyle{empty}
+
+\begin{center}
+    \Huge\textsc{THE UK UNIVERSITY INTEGRATION BEE}
+
+    \Huge 2021/22
+    $$
+    \int
+    $$
+\end{center}
+
+\vspace{0.8in}
+
+\begin{center}
+    \Huge\sffamily\textbf{ROUND TWO}\\
+    \LARGE\textbf{Saturday, 20 November 2021}
+\end{center}
+
+\vspace{0.7in}
+
+\begin{center}
+    \begin{adjustwidth}{2cm}{2cm}
+
+\includegraphics[height=0.7in]{oxford-logo}
+\hfill
+\includegraphics[height=0.7in]{durham-logo}
+\hfill
+\includegraphics[height=0.7in]{warwick-logo}
+
+
+\vspace{0.2in}
+
+\includegraphics[height=0.5in]{imperial-logo}
+\hfill
+\includegraphics[height=0.5in]{cambridge-logo}
+
+\end{adjustwidth}
+\end{center}
+
+
+\vspace{0.6in}
+
+\begin{center}
+    \Large
+\textbf{Sponsored by}
+
+\vspace{0.15in}
+
+\includegraphics[width=0.5\textwidth]{jane-street-logo}
+\end{center}
+\clearpage
+
+
+% Actual Questions
+
+
+%Good sources: 
+
+% DVKT Math - R1, Group & Shuttle
+% Solving together - ^  
+% Related instagram pages
+% MIT Int bee - Crossword & shuttle
+% Berkeley bee - used this last year - mainly R1
+% Belarusian open math olympiad - R1
+% Books like III and Almost impossible - mainly R1
+% My brain - any
+
+%Rally ones will be quite hard to do but maybe we could do a diverging one
+
+%correct all log to ln at the end and recheck tally
+
+%Lambert W integral? 
+
+%Need some Weierstrass shite maybe with a dutis variant too
+
+%These seem like good Round 1 or Round 2 part 1 things
+
+%Tally of difficulty
+%Easy: III (Q14,23,26)
+% Mid-low: IIIIIIIIII (Q1,4,8,10,20,21,22,25,28,32)
+% Mid: IIIIIIIII (Q3,11,12,18,19,27,30,35,36)
+% Mid high: IIIIIII (Q2,15,16,29,34,39,40)
+% Hard: IIIIII (Q5,6,7,13,17,33,38)
+% Very hard: III (Q9,24,31)
+
+%Q37 maybe i should remove so above doesnt include
+
+%Count of problem type:
+
+%Definite:
+%Series: Q1,Q4, Q7, Q9,17,18,24,27.28,31
+%-Catalan: Q17,24
+%DUTIS: Q5,21,30,33,40
+%Integral swap: Q34
+%Reflection: Q6,11,12,16,17,20,25,26.29,35
+%Contour: Q7,13 (some contour problems can be done in other ways - only one of these I only know a contour solution)
+%Weierstrass: Q3,30,36,37
+%Gamma: Q16,38
+%Beta: Q38,
+%Floor: Q4.9,28
+%Integral of inverse: 32
+%Hard af: Q31 (the tan(x^2) one)
+%Smart trick: Q6, Q8,11,19,22,35,36,39
+%Recurrence: Q3
+
+%Indefinite: Q2, Q10,14,15,22,26
+
+
+%Numbers left to put in: 69 - shuttle
+
+%need more trig subs
+
+% Start out with something friendly and nothing too hard till a couple problems in ! 
+
+%Possible http://www.12000.org/my_notes/ten_hard_integrals/inse1.htm#x4-30002.1
+% \begin{twocolumn}
+\begin{enumerate}
+
+%check all these problems!
+
+    \item $\int_0^1 \arctan^2(x) \dd x$
+%Possible but kinda grindy for 30 min
+%Method: Integrate by parts, split integral and sub in tan into both . by parts on the first, you get log cos from 0 to pi/4. then you can consider log tan from 0 to pi/4, sub in tan, sub in u=e^x and then use geometric series to solve it. 
+%Answer: pi^2/16 + pi/4 log2 - G
+%Difficulty: Hard
+\item $\int_2^{\infty} \ln\left(\frac{\floor{x}^2-1}{\floor{x}^2}\right) \dd x$
+%check this on wolfram, it should turn into the product n^2-1/n^2 which is a neat little donny.
+%mid low
+%use a^n cos(ntheta) sum maybe ?
+\item  $\int_0^{\pi} \frac{\dd x}{(2+\cos(x))^3} $
+%Problem 7 from here : https://brilliant.org/discussions/thread/brilliant-integration-contest-season-1/
+%Difficulty: Medium high
+%Answer: pi/2root(3)
+%This is kinda nice, maybe put it in round 1
+% I want this but I don't want too many Weierstrass subs in one year, maybe it'd be good next year? I should decide which Weierstrass ones I want
+\item $\int_0^{\pi} \ln(\sin{x})\cos^3(x) \dd x$
+%This is just 0 by reflection but a bit harder to spot 
+%changed to cos^3 as otherwise u=sinx gives a cheap solution
+%Difficulty: Mid low
+\item $\int \frac{t^2+1}{t^4+1} \dd t$
+%https://www.quora.com/How-do-I-calculate-displaystyle-int_0-1-frac-arctan-x-2-1+x-2-mathrm-dx/answer/Brian-Sittinger
+%Difficulty: Mid-low
+%this is decent
+%answer: 1/sqrt(2) arctan(t-t^-1/sqrt(2))
+\item $\int_{-\infty}^{\infty} \frac{\cos(ax^2)-\sin(ax^2)}{1+x^4} \dd x$
+%Everything from here: https://brilliant.org/discussions/thread/brilliant-integration-contest-season-1-part-3/
+%Difficulty: Mid high
+\item $\int_0^{\infty} \frac{\arctan(x)}{x^{\ln{x}+1}} \dd x$
+%Mid low - use 1/x sub and it becomes Gaussian. Answer pi^{3/2}/4
+%Originally integral 1 on round 1 lmao my first integral choice was shit    ; O anyway it is fair to assume Gaussian for this. 
+\item $\int_0^{\frac{\pi}{4}} \sqrt{\tan{x}}\sqrt{1-\tan{x}} \dd x$
+%Method: Sub x=root(tan) and sinx  and partial fractions, some other subs too.
+%Difficulty: Hard
+%https://www.instagram.com/p/B_AYH5TDVrx/
+%from insta im p sure lmao
+%Answer: pi \frac{sqrt{2+\sqrt{2}}{2}-pi
+\item $\int_0^{\pi} \frac{x\sin{x}}{3+\cos^{2}{x}} \dd x$
+%III page 153, check with wolfram
+%expand as geometric series on denominator, nice
+\item $\int_0^{\infty} \sin(x^2) \dd x$
+%Fresnel!
+%Answer sqrt(pi/2)
+    
+    \end{enumerate}
+% \end{twocolumn}
+
+\end{document}
