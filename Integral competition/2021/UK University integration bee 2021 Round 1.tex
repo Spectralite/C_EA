@@ -1,0 +1,315 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{titling} 
+\predate{}
+\postdate{} 
+\preauthor{} 
+\postauthor{}
+\setlength{\droptitle}{-2em} 
+\usepackage[export]{adjustbox}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{float}
+
+\title{UK University Integration Bee 2021}
+\author{}
+\date{}
+\setlength{\droptitle}{-10em} 
+
+\usepackage{amsmath}
+\everymath{\displaystyle}
+\usepackage{mathtools}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor} 
+\newcommand{\dd}{\mathrm{d}}
+
+\usepackage[scale=0.8, top=1.1in, bottom=1.1in]{geometry}
+
+\begin{document}
+
+\begin{titlepage}
+   \begin{center}
+       \vspace*{1cm}
+        \LARGE
+       \textbf{UK University Integration Bee Round 1}
+       
+       \vspace{0.8cm}
+       
+       \begin{figure}[h]
+            \centering
+            \begin{subfigure}{0.5\textwidth}
+                \includegraphics[width=0.8\textwidth]{University_of_Cambridge_logo.png}
+                \label{fig:sub1}
+            \end{subfigure}%
+            \hfill
+            \begin{subfigure}{0.5\textwidth}
+                \includegraphics[width=0.4\textwidth]{University of Oxford logo.png}
+            \end{subfigure}
+            \begin{subfigure}{0.5\textwidth}
+            \vspace{2cm}
+                \includegraphics[width=0.5\textwidth]{Imperial College London logo.png}  
+            \end{subfigure}%
+            \begin{subfigure}{0.5\textwidth}
+                \includegraphics[width=0.5\textwidth]{Durham_University_Logo.png} 
+            \end{subfigure}
+            \begin{subfigure}{0.5\textwidth}
+                 \includegraphics[width=0.5\textwidth]{University_of_Warwick_logo_2015_with_descriptor.png}  
+            \end{subfigure}%
+        \end{figure}
+         
+       
+            
+
+       \vfill
+        \Large
+       \textbf{Sponsored by}
+            
+       \vspace{0.8cm}
+        
+        \includegraphics[width=0.5\textwidth]{Jane Street logo.jpg}
+       
+            
+       
+            
+   \end{center}
+\end{titlepage}
+
+%Good sources: 
+
+% DVKT Math - R1, Group & Shuttle
+% Solving together - ^  
+% Related instagram pages
+% MIT Int bee - Crossword & shuttle
+% Berkeley bee - used this last year - mainly R1
+% Belarusian open math olympiad - R1
+% Books like III and Almost impossible - mainly R1
+% My brain - any
+
+%Rally ones will be quite hard to do but maybe we could do a diverging one
+
+%correct all log to ln at the end and recheck tally
+
+%Lambert W integral? 
+
+%Need some Weierstrass shite maybe with a dutis variant too
+
+%These seem like good Round 1 or Round 2 part 1 things
+
+%Tally of difficulty
+%Easy: III (Q14,23,26)
+% Mid-low: IIIIIIIIII (Q1,4,8,10,20,21,22,25,28,32)
+% Mid: IIIIIIIII (Q3,11,12,18,19,27,30,35,36)
+% Mid high: IIIIIII (Q2,15,16,29,34,39,40)
+% Hard: IIIIII (Q5,6,7,13,17,33,38)
+% Very hard: III (Q9,24,31)
+
+%Q37 maybe i should remove so above doesnt include
+
+%Count of problem type:
+
+%Definite:
+%Series: Q1,Q4, Q7, Q9,17,18,24,27.28,31
+%-Catalan: Q17,24
+%DUTIS: Q5,21,30,33,40
+%Integral swap: Q34
+%Reflection: Q6,11,12,16,17,20,25,26.29,35
+%Contour: Q7,13 (some contour problems can be done in other ways - only one of these I only know a contour solution)
+%Weierstrass: Q3,30,36,37
+%Gamma: Q16,38
+%Beta: Q38,
+%Floor: Q4.9,28
+%Integral of inverse: 32
+%Hard af: Q31 (the tan(x^2) one)
+%Smart trick: Q6, Q8,11,19,22,35,36,39
+%Recurrence: Q3
+
+%Indefinite: Q2, Q10,14,15,22,26
+
+
+%Numbers left to put in: 69 - shuttle
+
+%need more trig subs
+
+% Start out with something friendly and nothing too hard till a couple problems in ! 
+
+%Possible http://www.12000.org/my_notes/ten_hard_integrals/inse1.htm#x4-30002.1
+\begin{flushleft}
+1. $\int \sqrt{x\sqrt[3]{x\sqrt[4]{x\sqrt[5]{x\cdots}}}} \dd x$ \newline  \newline \newline 
+%https://www.mit.edu/~pax/pdf/qualifying_round_2018_test.pdf 
+%Difficulty: Easy, but its really nice and cute
+%I don't think this should be problem 1, maybe like problem 30-35 so it's like a gem you have to find hahahaha . . . changed mind, start with something nicer 
+2. $\int_0^{2\pi} \cos^{420}(x) \dd x$ \newline  \newline \newline 
+%Source: My brian: use complex exp definition and binomial thm, Answer: pi/2^419 (420 210) Mid low
+3. $\int_0^{\frac{\pi}{2}} \frac{\sqrt{\cos{\theta}}}{(\sqrt{\cos{\theta}}+\sqrt{\sin{\theta}})^5} \dd \theta$  \newline  \newline \newline 
+%Source: JEE I think, method is reflectoin and some subs but I don't know answer - GET ANSWER Medium
+%Answer: 1/6
+4. $\int_0^1 \frac{\sin(\ln{x})}{\ln{x}} \dd x$ \newline  \newline \newline 
+% From DVKT math, introduce parameter sin(alnx) and dutis, answer is pi/4. Nice medium problem
+5. $\int_0^4 \frac{\ln(x)}{\sqrt{4x-x^2}} \dd x$ \newline  \newline \newline 
+%From III page 70
+%Method: Various ways but I just reflection, subbed the sqrt and then split it into two for injective sub and they cancel, quite easy. Nahin says it took him 5 hours, it took me 5 minutes. I kind of want to do a poll to see how people found this one as it's somewhat special haha
+%Answer: 0
+%Difficulty: Mid - high
+5. $\int_0^{\infty} \left(\frac{\ln{x}}{1+x}\right)^2 \dd x$ \newline  \newline \newline 
+%not sure if too many series with ln ones yet so possible round 2 
+%Method: Let x=e^t. Then it's just some messing around with integrals and then a geometric series. Neat problem bringing together several things: https://www.quora.com/How-do-you-evaluate-int_0-infty-frac-ln-x-1-x-2-dx/answer/Brian-Sittinger
+%Answer: pi^2/3
+%Difficulty: Medium
+5. $\int_0^1 W(x) \dd x$ (W is the Lambert W function, the solution to $W(x)e^{W(x)}=x$) \newline  \newline \newline 
+%Source: https://docs.google.com/document/d/1ViU0P8EH_4ZBTDX2s7bI0S6iJmIPWkZmW3TLzreFPWY/edit
+%Method: Integral of inverse, a nice little trick which is made quite explicit with def of W. Work through to make sure.
+%Answer: e-1
+%Difficulty: Medium low
+6. $\int_{-\infty}^{\infty} \frac{\dd x}{\left(x^3+\frac{1}{x^3}\right)^2}$ \newline  \newline \newline 
+%Source: https://www.quora.com/What-is-displaystyle-int_-0-infty-frac-1-left-x-3-frac-1-x-3-right-2-mathrm-d-x Do 0 to inf, Sub x=e^t and use rectangular contour. Hard, answer pi/9
+7.$\int \frac{x-1}{(x+1)\sqrt{x^3+x^2+x}} \dd x$ \newline \newline \newline
+%https://www.instagram.com/p/B8rjLa0JZwq/
+%Sol https://www.instagram.com/p/B8vwZBGpyVk/
+%medium?
+8. $\int_0^1 \frac{x}{\sin(x)} \dd x$ \newline  \newline \newline 
+%Source: Word from step server i think? Method: Integrate by parts and you get some log sin and cos from 0 to pi/2 and 0 to pi/4 which aen't bad
+%Answer: 2G
+%Difficulty: Hard
+9. $\int_1^{\infty} \left(\frac{\ln{x}}{x}\right)^{2011} \dd x$\newline  \newline \newline 
+%Just for the history I've had with this integral :open_mouth: From Splash notes. 
+%Method: DUTIS: https://www.quora.com/How-do-you-evaluate-int_1-infty-left-frac-log-x-x-right-2011-dx-calculus-integration-improper-integrals-math
+%Answer: 2011!/2010^2012
+%Difficulty: Mid-Low
+
+10. $\int_0^{\infty} \frac{\sin{x}}{x^n} \dd x$  $(0<n<2)$ \newline  \newline \newline 
+%Method: Either use Laplace product identity or use Imaginary part of e^ix and then sub t=ix and use Gamma function - no idea why this gives the right answer . . . might figure it out with contour integration some day
+%Answer: pi*csc(npi/2)/2Gamma(n) 
+%Difficulty: Medium
+11. $\int_0^{\frac{\pi}{2}} \frac{\cos{x}}{(1+\sqrt{\sin(2x)})^2}$ \newline \newline \newline
+37. $\int \frac{\dd x}{\csc{x}+1}$ \newline  \newline \newline 
+%Source: https://www.math24.net/weierstrass-substitution-page-2#example9
+%Answer: on page
+%Difficulty: Mid
+%https://www.instagram.com/p/B9zheYwp4Nz/ - this is actually really nice
+%https://www.instagram.com/p/B94YwcuJZaC/ solution, this might be decend for round 2 group
+%Answer:1/3
+%Difficulty: medium
+12. $\int \sqrt{\frac{1}{x}-1} \dd x$ \newline  \newline \newline 
+%Source: https://www.quora.com/What-are-some-lesser-known-techniques-of-integration/answer/Phil-Scovis
+13. $\int_0^{\frac{\pi}{2}} \ln(7997\sin^2{\theta}+7945\cos^2{\theta})$ \newline  \newline \newline  %Maybe round 1 for the meme
+%Method: Just rearrange till it's 1+kcos^2 and use DUTIS
+%Answer: piln(sqrt(7997)+sqrt(7945)/2)
+%Difficulty: Mid-high
+14. $\int_0^{\frac{\pi}{2}} \frac{\{\tan(x)\}}{\tan(x)} \dd x$ Here, $\{x\}$ is the fractional part of $x$ \newline  \newline \newline 
+%Source: Almost impossible integrals, use some big series stuff : Very Hard Answer 1/2(pi-log(sinh(pi)/pi)
+15. $\int_0^{2\pi} e^{3\cos{\theta}}\cos(3\sin{\theta}) \dd \theta $ \newline  \newline \newline 
+%Source: https://brilliant.org/wiki/differentiate-through-the-integral/
+%Method: Introduce paramater t and DUTIS to show f'(t)=0 and f(0)=2pi 
+%Answer: 2pi
+%Difficulty: Medium
+16. $\int_0^a \frac{x \dd x}{\cos(x)\cos(a-x)}$ \newline  \newline \newline 
+%https://brilliant.org/discussions/thread/brilliant-integration-contest-season-1-part-2/ Problem 22
+%Answer is a/sina lnseca 
+%Medium
+17. $\int_0^1 \frac{\arctan{x}}{1+x} \dd x$ \newline  \newline \newline 
+%Integrate by parts and sub in X=tan, answer is π/4 log2 (some reflection too)
+%Difficulty: Mid
+18. $\int_0^{\infty} \frac{\cos(ax)}{x^2+b^2} \dd x$  \newline  \newline \newline 
+%Source: III page 79
+%Integrate by parts then dutis with a and you get ODE. With DUTIS, it's a nice problem with a twist, with contour it's just easy which sucks.
+%I want a DUTIS with introduce an e here, maybe cosx-1/x ?
+%Difficulty: Mid high
+19. $\int \frac{\dd x}{1+2x^2-2\sqrt{x^2+x^4}}$ \newline  \newline \newline 
+%Source: https://www.youtube.com/watch?v=oOm1jcf6KNs , Answer is at the end of the video Mid low
+20. $\int_0^1 \frac{\dd x}{1+\floor{\frac{1}{x}}}$ \newline  \newline \newline 
+%From DVKT math, use a sub 1/x or go for it in usual floor way. Answer is 2-pi^2/6, mid low
+21. $\int_0^{\frac{\pi}{2}} \frac{\sin^3{x}}{2+\sin{x}} \dd x$ \newline  \newline \newline 
+%Pick some n which is't thaat high like 3 or 5. From STEP 2013 S3 Q1, difficulty medium. Needs Weierstrass too so it's quite neat.
+22. $\int_1^e \frac{x-\ln{x}+1}{x(x+1)^2+x\ln^2{x}} \dd x$ \newline  \newline \newline 
+%Source: DVKT Math
+%Method: Not sure need to solve it, some algebruh?
+%Answer: arcot(1+e)
+%Difficulty: Presumably medium high
+23. $\int_0^{\frac{\pi}{2}} \frac{\ln(\cos{x})}{\sin{x}} \dd x$ \newline  \newline \newline 
+%Method (not in my jamboard): Let u=cosx and then you get lnu/1-u^2 and use geometric series: https://www.youtube.com/watch?v=dEeV6qIQkyk
+%Difficulty: Medium
+%Answer: -pi^2/8
+24. $\int_0^1 \frac{\arctan(x^2)}{1+x^2} \dd x$ \newline  \newline \newline 
+%Source: https://www.quora.com/How-do-I-calculate-displaystyle-int_0-1-frac-arctan-x-2-1+x-2-mathrm-dx/answer/Brian-Sittinger
+%Difficulty: Very hard, just lokos impossible lmao
+%answer: 1/16 ln^2(3-2sqrt(2))
+
+25 (maybe put this on middle of second page). $\int_0^{\infty} \frac{\arctan(x)}{x(\log(x)^2+1)} \dd x$ \newline  \newline \newline 
+%Method: Sub x=1/z. Then very simple. 
+%Answer: pi^2/4
+%Difficulty: Medium low
+26. $\int_0^{\infty} \frac{\cos(ax)-\cos(bx)}{x^2} \dd x$ \newline  \newline \newline 
+%Source: III page 88
+% Write as double integral and swap for Dirichlet. I want to include this as a way for people who have read my hints document about DUTIS tips and other shite (introduce e^-tx to get rid of
+%Maybe change this to 1-cos(2x) ? so that some people are duped and think about sin^2(x) lul
+%Difficulty: Medium
+
+%This problem is actually amazing, I might try to fit it in Round 1
+
+27. $\int_0^{\infty} \floor{x}e^{-x} \dd x$ \newline \newline \newline
+%Method is to split it into parts and just do it fam with a series
+%https://brilliant.org/wiki/floor-function/
+%Difficulty: Mid-low
+%Answer: 1/e-1
+28. $\int_{-\infty}^{\infty} \frac{\dd x}{\cosh^2(x)}$ \newline  \newline \newline 
+%Method: It's just sech^2 and its a meme i didnt notice
+%Answer: 2
+%Difficulty: Very easy
+%maybe put it expanded in R2 LUL
+29. $\int_0^{2\pi} e^{\cos{x}}\cos(\sin{x})\cos(5x) \dd x$ \newline  \newline \newline 
+%From DVKT math, can use contour integration. Or some ridiculous real series stuff Hard, Answer pi/120
+30 (put this in low 30s), $\int (\sec{x})^{(1+\sec{x})}(\tan{x}+\sin{x}) \dd x$ \newline  \newline \newline 
+31. $\int_0^{\infty} \frac{\ln(x)}{x^2+2x+2} \dd x$ \newline  \newline \newline 
+%Source: https://www.quora.com/How-does-one-evaluate-the-integral-displaystyle-int_0-infty-frac-ln-x-x-2-2x-2-mathrm-d-x-using-complex-analysis/answer/Brian-Sittinger
+%Difficulty: Mid-high
+%Answer: pi/8 ln(2)
+%Source: Archim 2017 bee. Method is inspect. Easy
+32. $\int_0^1 \frac{\arctan^2{x}}{x} \dd x$ \newline  \newline \newline 
+%Answer: piG/2 - 7/8 zeta(3)
+%Method: Integrate by parts and then sub and use fourier series of log sinx to evaluate xlogtanx from 0 to pi/4
+%Difficulty: Very hard
+33. $\int_3^5 \ln{\Gamma(x)} \dd x$ \newline  \newline \newline 
+%Source: My brian.  Method: Start with 0 to 1, use reflection and then split integral in two and use induction with functional eqn Answer: 5log5+3log3 - 8 + log(2pi) Difficulty: Medium low
+
+35. $\int_{\frac{\pi}{4}}^{\frac{\pi}{3}}  \cot{x}^{\tan{x}^{\cot{x}}}-\tan{x}^{\cot{x}^{\tan{x}}} \dd x$ \newline  \newline \newline 
+%JEE ADV, reflectoin and its 0. Easy
+36. $\int \frac{\dd x}{\sin^4(x)+\cos^4(x)}$ \newline  \newline \newline 
+%Source: My brian 
+%method: use complex exponentials to write this in term of cos(4x) and use Weierstrass sub. 
+%Answer: https://www.wolframalpha.com/input/?i=integral+4%2F%28cos%284x%29%2B3%29
+%Difficulty: Mid - high
+38. $\int_0^{\infty} \frac{\cos(\ln{x})}{(1+x)^2} \dd x$ \newline  \newline \newline 
+%Source: DVKT Math
+%Use beta function on imaginary and reflection formula
+%Answer: pi/sinh(pi)
+%Difficulty: Hard
+
+2. $\int \frac{\tan{x}}{\sqrt{\sec^3{x}+1}} \dd x$ \newline  \newline \newline 
+%From here: http://www.12000.org/my_notes/ten_hard_integrals/inch2.htm#x3-20002 - mid high
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{flushleft}
+
+
+\end{document}
